@@ -18,8 +18,8 @@ export function getUrlParams(url = window.location.href) {
 	return new URLSearchParams(urlStr);
 }
 
-const appID = +process.env.NEXT_PUBLIC_ZEGO_APP_ID!;
-const serverSecret = process.env.NEXT_PUBLIC_ZEGO_SERVER_SECRET!;
+const appID = 2089839955;
+const serverSecret = "37f97095a3f38903864ff5bb6041e268";
 
 export default function VideoUIKit() {
 	const roomID = getUrlParams().get("roomID") || randomID(5);
